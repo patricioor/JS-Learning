@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exString</title>
+</head>
+  <body>
+    <script>
+      const fullName = prompt('Insert your full name:');
+
+      document.body.innerHTML += `Your name is ${fullName}<br/>`;
+
+      document.body.innerHTML += `Your name have ${fullName.length} letters<br/>`;
+
+      document.body.innerHTML += `The second letter of your name is ${fullName[1]}<br/>`; // 0r fullname.charAt(1)
+
+      document.body.innerHTML += `What's the first index with letter "a" in your name: ${fullName.indexOf('a')}<br/>`;
+
+      document.body.innerHTML += `What's the last index with letter "ó" in your name: ${fullName.lastIndexOf('ó')}<br/>`;
+
+      document.body.innerHTML += `What's the three last letters in your name: ${fullName.slice((fullName.length)-3)}<br/>`;
+
+      document.body.innerHTML += `The words of your full name is: ${fullName.replace(/ /g, ",")}<br/>`;
+
+      document.body.innerHTML += `Your name in upperecase: ${fullName.toUpperCase()}<br/>`;
+
+      document.body.innerHTML += `Your name in lowercase: ${fullName.toLowerCase()}<br/>`;
+
+    </script>
+  </body>
+  
+
+</html>
