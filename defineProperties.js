@@ -11,7 +11,7 @@ function Produto(nome, preco, estoque) {
       configurable: true, // Se pode apagar ou reconfigurar
       get: () => nomePro,
       set: (valor) => {
-        if(typeof valor !== 'string') throw new TypeError('Erooooow! Tem que ser uma string!!');
+        if(typeof valor !== 'string') throw new TypeError('Tem que ser uma string!!');
         nomePro = valor;
       }
     },
@@ -20,7 +20,7 @@ function Produto(nome, preco, estoque) {
       configurable: false, // Se pode apagar ou reconfigurar
       get: () => precoPro,
       set: (valor) => {
-        if (typeof valor !== 'number') throw new TypeError('Eroooow! Tem que ser um number!!');
+        if (typeof valor !== 'number') throw new TypeError('Tem que ser um number!!');
         precoPro = valor;
       }
     },
@@ -29,7 +29,7 @@ function Produto(nome, preco, estoque) {
       configurable: true,
       get: () => estoquePro,
       set: (valor) => {
-        if (typeof valor !== 'number') throw new TypeError('Eroooow! Tem que ser um number!!');
+        if (typeof valor !== 'number') throw new TypeError('Tem que ser um number!!');
         estoquePro = valor;
       }
     }
